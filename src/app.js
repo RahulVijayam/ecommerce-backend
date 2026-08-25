@@ -11,6 +11,7 @@ app.get('/',(req,res)=>{
 app.use('/api/user',userRoutes);
 
 
+
 /*Notice that we don't call app.listen() here.*/
 
 module.exports=app;

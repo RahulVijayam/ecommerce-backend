@@ -9,7 +9,8 @@ const router=express.Router();
 
 router.post('/register',signupRules,userController.register);
 router.post('/login',loginRules,userController.login);
-router.get('/profile', verifyToken,verifyUser, userController.profile);
+router.get('/profile', verifyToken, userController.profile);
+router.get('/product', verifyToken,verifyUser, userController.createproduct);
 
 
 module.exports =router; 

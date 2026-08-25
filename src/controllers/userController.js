@@ -53,4 +53,13 @@ const profile = async (req, res) => {
 
 }
 
-module.exports = { register, login, profile }
+
+const createproduct = async (req, res) => {
+     return res.status(200).json({
+        message: "Protected route accessed successfully",
+        userId: req.user.userId
+    });
+
+}
+
+module.exports = { register, login,profile, createproduct }
